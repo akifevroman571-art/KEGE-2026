@@ -1,22 +1,22 @@
 from turtle import *
-screensize(10000, 10000)
+screensize(3000, 3000)
+m = 15
 tracer(0)
-m = 14
-for i in range(3):
-    fd(7 * m)
+for i in range(4):
+    fd(30 * m)
     rt(90)
-    fd(12* m)
+    fd(48 * m)
     rt(90)
 up()
-fd(4* m)
+fd(27 * m)
 rt(90)
-fd(6* m)
+fd(24 * m)
 lt(90)
 down()
 for i in range(4):
-    fd(83* m)
+    fd(29 * m)
     rt(90)
-    fd(77* m)
+    bk(18 * m)
     rt(90)
 up()
 for x in range(-100, 100):
@@ -26,4 +26,4 @@ for x in range(-100, 100):
 
 update()
 done()
-36
+x = 30
