@@ -41,4 +41,15 @@ print(int(bin_num), 2)
 print(int(oct_num), 8)
 print(int(tri_num), 3)
 
+# Сумма цифр числа
+# двоичное число
+R_1 = '101'
+sum_1 =R_1.count('1')
+
+# Число в любой системе до м10 включительно
+R_3 = 'AF7'
+sum_3 = sum(map(lambda x: int(x , 36), R_3))
+
+
+
 
