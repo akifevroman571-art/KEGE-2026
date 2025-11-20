@@ -5,23 +5,7 @@ def convert(num, sys):
         res += alph[num % sys]
         num //= sys
     return res[::-1]
-
-
-for n in range(2, 37):
-    a = convert(41, n)
-    b = convert(131, n)
-    if a[-1] == '2' and b[-1] == '1':
-        print(n)
-
-
-
-
-
-
-
-
-
-    
-
-
-
+a = 283**382 + 9**15 + 2**3
+b = convert(a, 14).count('b')
+c = convert(a, 14).count('c')
+print(abs(b - c))

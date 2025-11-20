@@ -18,19 +18,18 @@ def convert(num, sys):
     res = ''
     while num:
         res += str( num % sys)
-        num //= 3
+        num //= sys
     return res[::-1]
 
 
 # Перевод в любую систему(2 <= sys <=36)
 
-from string import printable as pp
+from string import printable as alph
 def convert(num, sys):
     res = ''
-    alph = pp
     while num:
         res += alph[num % sys]
-        num //= 3
+        num //= sys
     return res[::-1]
 
 # Перевод в 10-ую систему счисления
