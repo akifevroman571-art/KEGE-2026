@@ -1,1 +1,1 @@
-print(int('88811', 9))
+print(sum(61))
