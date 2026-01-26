@@ -19,7 +19,7 @@ def convert(num, sys):
     while num:
         res += str( num % sys)
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 
 # Перевод в любую систему(2 <= sys <=36)
@@ -30,7 +30,7 @@ def convert(num, sys):
     while num:
         res += alph[num % sys]
         num //= sys
-    return res[::-1]
+    return res[::-1] if res else '0'
 
 # Перевод в 10-ую систему счисления
 bin_num = '101'
