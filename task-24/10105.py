@@ -1,0 +1,10 @@
+# через цикл for
+with open(r'.\files-24\24_10105.txt') as file:
+    data = file.readline()
+data = data.split()
+ans = 0
+for i in range(len(data)-100):
+    ans = max(ans, len('T'.join(data[i:i+101])))
+print(ans)
+
+
