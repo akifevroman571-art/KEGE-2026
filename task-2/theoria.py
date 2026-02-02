@@ -21,7 +21,7 @@ for a in range(2):
             for d in(0, 1):
                 f = (not a and not b) or (b == c) or d
                 if f:
-                    print(a, b, c, d)
+                    print(a, b, c, d) # истина
                 if not f:
                     print(a, b, c, d)
                 print(a, b, c, d)
