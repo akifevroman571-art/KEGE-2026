@@ -25,7 +25,7 @@ def convert(num, sys):
 # Перевод в любую систему(2 <= sys <=36)
 
 from string import printable as alph
-def convert(num, sys):
+def f(num, sys):
     res = ''
     while num:
         res += alph[num % sys]
