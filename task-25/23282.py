@@ -21,8 +21,8 @@ def f(num):
 cnt = 0
 for n in range(5400000, 10**20):
     m = f(n)
-    if m:
+    if len() >10:
         print(n, m)
         cnt +=1
-        if cnt == 5:
+        if cnt == 6:
             break
