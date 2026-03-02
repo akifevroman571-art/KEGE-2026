@@ -8,3 +8,4 @@ print('19', [x for x in range(1, 59) if f(x, 6, 2)])
 print('20', [x for x in range(1, 59) if f(x, 6, 3) and not f(x, 6, 1)])
 print('21', [x for x in range(1, 59) if f(x, 6, 4) and not f(x, 6, 2)])
 
+
