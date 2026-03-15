@@ -1,4 +1,4 @@
-with open(r'.\files\17_9748.txt') as file:
+with open(r'..\files\17_9748.txt') as file:
     data = [int(i) for i in file]
 ans = []
 max_15 = max(i for i in data if abs(i) % 100 == 15)
