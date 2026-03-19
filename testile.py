@@ -1,2 +1,2 @@
-a = 'cndncdjcd'
-print(a.index('d'))
+from string import *
+print(printable[:15])
