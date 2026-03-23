@@ -1,8 +1,11 @@
-def f(x):
-    return (a%25==0) and (x%24==0) and (x%75==0) <= (x%a==0)
-cnt = 0
-for a in range(1, 1000):
-    if all(f(x) for x in range(1, 1000)):
-        print(a)
-        cnt+=1
-print(cnt)
+def f(n, m):
+     return n % m == 0
+def g(x):
+    if a != 0:
+        return f(a, 25) and ((f(x, 24) and f(x, 75)) <= f(x, a))
+ans = []
+for a in range(-10000, 10000):
+    if all(g(x) for x in range(-10000, 10000)):
+        ans.append(a)
+print(len(ans))
+
