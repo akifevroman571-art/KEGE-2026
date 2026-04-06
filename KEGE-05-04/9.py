@@ -8,7 +8,7 @@ for pos, line in enumerate(data, start=1):
     if sorted(cnt) == [1,1,1,1,2]:
         pov = [i for i in line if line.count(i) >1]
         nepov = [i for i in line if line.count(i)==1]
-        if sum(pov) >= sum(nepov):
+        if sum(pov) /2 >= sum(nepov) / 4:
             print(pos)
             break
 
