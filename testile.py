@@ -1,1 +1,4 @@
-print(int('1010111111', 2))
+from string import printable
+from itertools import *
+for val in product(printable[:7]):
+    print(pos, val)

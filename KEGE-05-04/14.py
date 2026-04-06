@@ -7,6 +7,12 @@ def f(n, s):
     return res[::-1]
 
 
-a = f(39 ** 483 + 39 * 235 - 10, 39)
+for x in range(1, 9431):
+    a = f(39 ** 483 + 39 * 235 - x, 39)
+    print(a.count('0'))
 
-print(a.count('0'))
+
+
+
+
+
