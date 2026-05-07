@@ -4,13 +4,17 @@ with open(r'../files-24/24_2942.txt') as file:
 
 
 ans = 0
+new_start = 0
 for i in range(len(data)-1):
+    if i < new_start:
+        continue
     if data[i:i+2] in 'AB AC':
         cnt=1
         for j in range(i+2 , len(data)-1, 2):
             if data[j:j + 2] in 'AB AC':
                 cnt+=1
             else:
+                new_start = j
                 break
         ans = max(ans, cnt)
 
