@@ -1,0 +1,8 @@
+data ={}
+data['name'] = 'Test'
+data['age'] = 18
+
+print(data)
+print(data.values())
+print(data.keys())
+print(data.items())

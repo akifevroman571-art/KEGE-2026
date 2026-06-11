@@ -3,7 +3,7 @@ with open(r'..\task-26\files\26_16335.txt') as file:
     cakes = {int(i) for i in file}
 
 cakes = sorted(cakes, reverse=True)
-last_cake   ` = cakes[0]
+last_cake = cakes[0]
 cnt = 0
 
 for cake in cakes:
